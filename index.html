@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BusWave</title>
+    <link rel="icon" href="images\bus1.png" type="image/png">
+    <link rel="stylesheet" href="bus.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="header">
+        <h1>Welcome to <span style="color: blue">Bus Wave....</span> </h1>
+        <img src="images\bus2.png" id="bus2">
+    </div>
+    <div id="navbar">
+        <ul>
+            <li><a href="#box" onclick="show()">Home</a></li>
+            <li><a href="#About" onclick="About1()">About</a></li>
+            <li><a href="#contact1" onclick="contact()">ContactUs</a></li>
+
+        </ul>
+    </div>
+    <div class="time-container">
+    <section id="box">
+       <h2>Search bus Timings Between Two stops</h2>
+       <button id="timings" onclick="track()"><h1>Get Timings</h1></button>
+       <div id="bustime">
+        <img src="images\bus5.png" id="ba1">
+    </div>
+    </section></div>
+    <div id="container">
+    <section id="box1">
+        <label id="start" for="start-point" ></label>
+      <p>Select Starting Point:</p><select id="start-point" name="start point">
+        <option value="Vijayawada">Vijayawada</option>
+        <option value="Hyderbad">Hyderbad</option>
+        <option value="chennai">chennai</option>
+        <option value="Banglore">Banglore</option>
+    </select>
+    <img src="images\bus3.png" id="bus3">
+    
+        <label id="end" for="End-point"></label>
+        <select id="End-point" name="End-Point">
+            <option value="Hyderbad">Hyderbad</option>
+            <option value="Vijayawada">Vijayawada</option>
+        <option value="chennai">chennai</option>
+        <option value="Banglore">Banglore</option>
+        </select>
+        <p>Select Dropping Point:</p>
+        <input type="submit" value="Get Timings" onclick="GetValue()" id="track">
+    </section>
+</div>
+<div id="About">
+    <h3>
+        About BusWave<br><br>
+
+        Welcome to BusWave, your ultimate destination for hassle-free bus travel planning and ticket booking. At BusWave, we understand the importance of a smooth and efficient journey, whether it's your daily commute or an exciting adventure. That's why we've created a user-friendly platform that caters to all your bus travel needs.<br>
+        
+        Key Features:<br>
+        
+        Real-Time Bus Timings: Get instant access to real-time bus schedules between two stops, ensuring you're always in control of your journey.<br>
+        
+        Convenient Ticket Booking: Skip the lines and book your bus tickets online with ease. Choose your route, select your preferred date and time, and secure your seat in seconds.<br>
+        
+        User-Friendly Interface: Our intuitive interface makes navigating the website a breeze. Find bus timings, routes, and book tickets effortlessly.<br>
+        
+        Accessibility: BusWave is designed to be accessible from any device with an internet connection, whether you're on your desktop, tablet, or smartphone.<br>
+        
+        Dedicated Customer Support: Our friendly and responsive customer support team is here to assist you with any questions or concerns you may have.<br>
+        
+        BusWave is more than just a travel platform; it's your trusted companion for a seamless and stress-free bus journey. Whether you're a daily commuter or a traveler exploring new destinations, we're committed to making your bus travel experience comfortable and convenient.<br><br>
+        
+        Thank you for choosing BusWave. Your journey begins here.
+  <br><br>
+  Note:This is the website i made to show my HTML,CSS and Javascript skills only.....<br><br><br>
+  THANK YOU VISIT AGAIN.......
+    </h3>
+</div>
+<div id="shedule">
+    <table id="timingsData">
+   <thead>
+    <tr>
+    <th>Boarding Point</th>
+    <th>Destination</th>
+    <th>Starts At</th>
+    <th>Reach By</th>
+</tr>
+   </thead>
+   <tbody>
+    <tr>
+        <td><h2></h2></td>
+        <td><h2></h2></td>
+        <td><h3></h3></td>
+        <td><h3></h3></td>
+    </tr>
+   </tbody>
+</table>
+</div>
+<div id="book">
+    <section id="booking">
+        <h2>Book Ticket Now</h2>
+        <p id="wish">Your Journey Starts Here.....</p>
+        <button id="ticket" onclick="ticket1()"><h1>Book Ticket</h1></button>  
+    </section>
+</div>
+<div id="dateSet">
+<label for="d1">Select Date:</label>
+<input type="date" id="d1" name="d1" value="">
+</div>
+<div id="container2">
+    <section id="box2">
+        <label id="start1" for="start-point1" ></label>
+      <p>Select Starting Point:</p><select id="start-point1" name="start point">
+        <option value="Vijayawada">Vijayawada</option>
+        <option value="Hyderbad">Hyderbad</option>
+        <option value="chennai">chennai</option>
+        <option value="Banglore">Banglore</option>
+    </select>
+    <img src="images\bus3.png" id="bus3">
+    
+        <label id="end1" for="End-point1"></label>
+        <select id="End-point1" name="End-Point">
+            <option value="Hyderbad">Hyderbad</option>
+            <option value="Vijayawada">Vijayawada</option>
+        <option value="chennai">chennai</option>
+        <option value="Banglore">Banglore</option>
+        </select>
+        <p>Select Dropping Point:</p>
+        <input type="submit" value="Book" onclick="GetValue1()" id="track1">
+    </section>
+</div>
+<div class="confirmseats">
+    <table id="confirmdata">
+        <thead>
+         <tr>
+         <th>Boarding Point</th>
+         <th>Destination</th>
+         <th>Starts At</th>
+         <th>Reach By</th>
+         <th>Book</th>
+     </tr>
+        </thead>
+        <tbody>
+         <tr>
+            
+         </tr>
+        </tbody>
+     </table> 
+</div>
+</div>
+<div class="BusLayout">
+    <div id="steering">
+        <h2>_________</h2>
+    </div>
+    <section id="col1">
+        <button class="c1r1" onclick="seatselect('1')">1</button>
+        <button class="c1r2" onclick="seatselect(2)">2</button>
+        <button class="c1r3" onclick="seatselect(3)">3</button>
+        <button class="c1r4" onclick="seatselect(4)">4</button>
+        <button class="c1r5" onclick="seatselect(5)">5</button>
+        <button class="c1r6" onclick="seatselect(6)">6</button>
+        <button class="c1r7" onclick="seatselect(7)">7</button>
+        <button class="c1r8" onclick="seatselect(8)">8</button>
+        <button class="c1r9" onclick="seatselect(9)">9</button>
+        <button class="c1r10"onclick="seatselect(10)">10</button>
+    </section>
+    <section id="col2">
+        <button class="c2r1" onclick="seatselect(11)">11</button>
+        <button class="c2r2" onclick="seatselect(12)">12</button>
+        <button class="c2r3" onclick="seatselect(13)">13</button>
+        <button class="c2r4" onclick="seatselect(14)">14</button>
+        <button class="c2r5" onclick="seatselect(15)">15</button>
+        <button class="c2r6" onclick="seatselect(16)">16</button>
+        <button class="c2r7" onclick="seatselect(17)">17</button>
+        <button class="c2r8" onclick="seatselect(18)">18</button>
+        <button class="c2r9" onclick="seatselect(19)">19</button>
+        <button class="c2r10" onclick="seatselect(20)">20</button>
+    </section>
+    <section id="col3">
+        <button class="c3r1" onclick="seatselect(21)">21</button>
+        <button class="c3r2" onclick="seatselect(22)">22</button>
+        <button class="c3r3" onclick="seatselect(23)">23</button>
+        <button class="c3r4" onclick="seatselect(24)">24</button>
+        <button class="c3r5" onclick="seatselect(25)">25</button>
+        <button class="c3r6" onclick="seatselect(26)">26</button>
+        <button class="c3r7" onclick="seatselect(27)">27</button>
+        <button class="c3r8" onclick="seatselect(28)">28</button>
+        <button class="c3r9" onclick="seatselect(29)">29</button>
+        <button class="c3r10" onclick="seatselect(30)">30</button>
+    </section>
+    <section id="col4">
+        <button class="c4r1" onclick="seatselect(31)">31</button>
+        <button class="c4r2" onclick="seatselect(32)">32</button>
+        <button class="c4r3" onclick="seatselect(33)">33</button>
+        <button class="c4r4" onclick="seatselect(34)">34</button>
+        <button class="c4r5" onclick="seatselect(35)">35</button>
+        <button class="c4r6" onclick="seatselect(36)">36</button>
+        <button class="c4r7" onclick="seatselect(37)">37</button>
+        <button class="c4r8" onclick="seatselect(38)">38</button>
+        <button class="c4r9" onclick="seatselect(39)">39</button>
+        <button class="c4r10" onclick="seatselect(40)">40</button>
+    </section>
+
+    <div id="showButton">
+        <button type="submit" id="final">Book Now</button>
+        <span id="selected-seats"> Selected</span>
+        <p>Total Amount: <span id="total-amount">Rs0</span></p>
+    </div>
+    <div id="vticket">
+        <p><h1 style="font-style: oblique;">Happy Journey</h1></p>
+        <p id="text">Ticket Confirmed:</p><div id="ln1"><h3></h3></div>
+        <p id="text2">Amount in Rs:</p><h3 id="ln2"></h3>
+        <p id="text3">Date:</p><h3 id="ln3"></h3>
+        <div class="ggg">
+        <p id="text4">From:</p><h3 id="ln4"></h3>
+        <p id="text5">To:</p><h3 id="ln5"></h3><br>
+        <p>Ticket-Id: PVG06112002</p>
+        <p>Page Redirects in 5 sec...</p>
+    </div>
+
+    </div>
+</div>
+<div id="contact" style="text-align: center;">
+    <section id="contact1">
+    <p><B>Mail Id:</B>palliganesh0242@gmail.com</p>
+   <a href="https://www.linkedin.com/in/ganeshpalli11/" target="_blank"><img src="images\ln.png" id="ln" ></a>
+</section>
+</div>
+
+<script src="bus.js"></script>
+</body>
+</html>
